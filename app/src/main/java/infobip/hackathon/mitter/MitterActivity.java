@@ -25,7 +25,7 @@ public class MitterActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected JSONObject onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mitter);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -35,9 +35,9 @@ public class MitterActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Login", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "title_activity_login", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                private EditText ;
+               /* private EditText ;
                 User makeUser=new User;
                 System.out.print("Name:");
                 makeUser.name=(EditText) ;
@@ -59,6 +59,7 @@ public class MitterActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 @SuppressWarnings("deprecation")
+                        return newUser;
                 /*HttpClient httpclient = new DefaultHttpClient();
                 //  make POST request to the given URL
                 String url=String.format("http://...", IPaddress);

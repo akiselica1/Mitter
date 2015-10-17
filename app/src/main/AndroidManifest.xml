@@ -48,6 +48,15 @@
                 android:theme="@style/AppTheme.NoActionBar"
 >
         </activity>
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/postal_address_hint"
+            android:inputType="name|
+                       lastName|
+                       email |
+                       password" />
     </application>
 </manifest>
 >>>>>>> Added

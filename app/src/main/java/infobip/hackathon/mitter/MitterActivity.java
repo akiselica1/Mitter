@@ -25,7 +25,7 @@ public class MitterActivity extends AppCompatActivity {
 
 
     @Override
-    protected JSONObject onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mitter);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -124,14 +124,6 @@ public class MitterActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private boolean checkEmail(String email) {
-        return EMAIL_ADDRESS_PATTERN.matcher(email).matches();
-    }
-
-    public boolean isNameValid(String name){
-        String regx = "[a-zA-Z]+\\.?";
-        Pattern pattern = Pattern.compile(regx,Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(name);
-        return matcher.find();
+    return matcher.find();
     }
 }
